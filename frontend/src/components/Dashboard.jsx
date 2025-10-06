@@ -37,6 +37,15 @@ function Dashboard({ userName, onLogout }) {
       return;
     }
 
+    // Validate cents (max 2 decimal places)
+    if (Math.round(transactionAmount * 100) / 100 !== transactionAmount) {
+      setMessage({
+        type: "error",
+        text: "Amount must have at most 2 decimal places",
+      });
+      return;
+    }
+
     setLoading(true);
     setMessage({ type: "", text: "" });
 

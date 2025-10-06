@@ -71,9 +71,9 @@ function Login({ onLoginSuccess }) {
 
       <div className="test-pins">
         <strong>Test Accounts:</strong>
-        <div>PIN: 1234 - John Doe ($5,000.00)</div>
-        <div>PIN: 5678 - Jane Smith ($10,000.00)</div>
-        <div>PIN: 9999 - Bob Johnson ($2,500.00)</div>
+        <div>PIN: 1234 - John Doe</div>
+        <div>PIN: 5678 - Jane Smith</div>
+        <div>PIN: 9999 - Bob Johnson</div>
       </div>
     </div>
   );
